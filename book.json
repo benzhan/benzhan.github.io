@@ -1,0 +1,77 @@
+{
+    "description": "DIY系统",
+    "language": "zh-hans",
+    "title": "Duowan DIY 帮助文档",
+    "root": ".",
+    "links": {
+        "sidebar": {}
+    },
+    "plugins": [
+        "-lunr",
+        "-theme-api",
+        "-search",
+        "theme-comscore",
+        "search-pro@^2.0.2",
+        "tbfed-pagefooter",
+        "expandable-menu",
+        "edit-link",
+        "anchor-navigation-ex",
+        "addcssjs",
+        "richquotes",
+        "prism", 
+        "-highlight"
+    ],
+    "pluginsConfig": {
+        "addcssjs": {
+            "js": [
+                "./scripts/mermaid.min.js",
+                "./scripts/index.js"
+            ],
+            "css": [
+            ]
+        },
+        "theme-default": {
+            "showLevel": false
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright &copy duowan 2019",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "edit-link": {
+            "base": "http://svn.ouj.com:3000/dwdoc/gitbook/src/master",
+            "label": "编辑该页面"
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false,
+            "associatedWithSummary": true,
+            "printLog": false,
+            "multipleH1": true,
+            "mode": "float",
+            "showGoTop":true,
+            "float": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            },
+            "pageTop": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            }
+        },
+        "prism": {
+            "lang": {
+              "cleos": "bash"
+            }
+        }
+    },
+    "styles": {
+        "website": "styles/website.css"
+    },
+    "variables": {
+        "admin": ""
+    }
+}
